@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignHub - Your Creative Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-gradient {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Hero Section -->
+    <section class="animate-gradient text-white py-20">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Turn Your Ideas into Stunning Designs</h1>
+            <p class="text-xl md:text-2xl mb-8">Custom graphics, illustrations, and more – delivered to your account.</p>
+            <a href="/register" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Why Choose DesignHub?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/50" alt="Custom Icon" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Tailored Designs</h3>
+                    <p>Submit your vision, and our team crafts it just for you.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/50" alt="Fast Icon" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                    <p>Get your designs quickly without compromising quality.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/50" alt="Download Icon" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Easy Downloads</h3>
+                    <p>Access and download your files anytime from your account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <p class="italic mb-4">"The designs were exactly what I needed, and downloading them was a breeze!"</p>
+                    <p class="font-semibold">– Sarah M.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <p class="italic mb-4">"Fast, professional, and affordable. I’ll be back for more!"</p>
+                    <p class="font-semibold">– Ali R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Ready to Create Something Amazing?</h2>
+            <a href="/register" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition">Sign Up Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 DesignHub. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">About</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation for smooth navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
