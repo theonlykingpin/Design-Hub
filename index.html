@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,35 +18,40 @@
         }
     </style>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 transition-all duration-300" id="body-root">
+    <!-- Language Switch Button -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="lang-toggle" class="bg-gray-200 px-4 py-2 rounded-full font-semibold hover:bg-gray-300 transition">فارسی</button>
+    </div>
+
     <!-- Hero Section -->
     <section class="animate-gradient text-white py-20">
         <div class="container mx-auto text-center px-4">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Turn Your Ideas into Stunning Designs</h1>
-            <p class="text-xl md:text-2xl mb-8">Custom graphics, illustrations, and more – delivered to your account.</p>
-            <a href="/register" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition">Get Started Now</a>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6" data-en="Turn Your Ideas into Stunning Designs" data-fa="ایده‌هایت را به طرح‌های خیره‌کننده تبدیل کن">Turn Your Ideas into Stunning Designs</h1>
+            <p class="text-xl md:text-2xl mb-8" data-en="Custom graphics, illustrations, and more – delivered to your account." data-fa="گرافیک سفارشی، تصاویر و بیشتر – مستقیم در حساب کاربری‌ات.">Custom graphics, illustrations, and more – delivered to your account.</p>
+            <a href="/register" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Get Started Now" data-fa="همین حالا شروع کن">Get Started Now</a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">Why Choose DesignHub?</h2>
+            <h2 class="text-4xl font-bold text-center mb-12" data-en="Why Choose DesignHub?" data-fa="چرا DesignHub را انتخاب کنیم؟">Why Choose DesignHub?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="text-center p-6 bg-white rounded-lg shadow-lg">
                     <img src="https://via.placeholder.com/50" alt="Custom Icon" class="mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Tailored Designs</h3>
-                    <p>Submit your vision, and our team crafts it just for you.</p>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Tailored Designs" data-fa="طرح‌های سفارشی">Tailored Designs</h3>
+                    <p data-en="Submit your vision, and our team crafts it just for you." data-fa="چشم‌اندازت را بفرست، تیم ما آن را برایت می‌سازد.">Submit your vision, and our team crafts it just for you.</p>
                 </div>
-                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                <div class="texthz-center p-6 bg-white rounded-lg shadow-lg">
                     <img src="https://via.placeholder.com/50" alt="Fast Icon" class="mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
-                    <p>Get your designs quickly without compromising quality.</p>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Fast Delivery" data-fa="تحویل سریع">Fast Delivery</h3>
+                    <p data-en="Get your designs quickly without compromising quality." data-fa="طرح‌هایت را سریع و با کیفیت بگیر.">Get your designs quickly without compromising quality.</p>
                 </div>
                 <div class="text-center p-6 bg-white rounded-lg shadow-lg">
                     <img src="https://via.placeholder.com/50" alt="Download Icon" class="mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Easy Downloads</h3>
-                    <p>Access and download your files anytime from your account.</p>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Easy Downloads" data-fa="دانلود آسان">Easy Downloads</h3>
+                    <p data-en="Access and download your files anytime from your account." data-fa="هر زمان از حساب کاربری‌ات فایل‌ها را دانلود کن.">Access and download your files anytime from your account.</p>
                 </div>
             </div>
         </div>
@@ -55,15 +60,15 @@
     <!-- Testimonials Section -->
     <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">What Our Users Say</h2>
+            <h2 class="text-4xl font-bold text-center mb-12" data-en="What Our Users Say" data-fa="کاربران ما چه می‌گویند">What Our Users Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <p class="italic mb-4">"The designs were exactly what I needed, and downloading them was a breeze!"</p>
-                    <p class="font-semibold">– Sarah M.</p>
+                    <p class="italic mb-4" data-en="“The designs were exactly what I needed, and downloading them was a breeze!”" data-fa="«طرح‌ها دقیقاً همان چیزی بودند که نیاز داشتم، دانلودشان هم خیلی ساده بود!»">“The designs were exactly what I needed, and downloading them was a breeze!”</p>
+                    <p class="font-semibold" data-en="– Sarah M." data-fa="– سارا م.">– Sarah M.</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <p class="italic mb-4">"Fast, professional, and affordable. I’ll be back for more!"</p>
-                    <p class="font-semibold">– Ali R.</p>
+                    <p class="italic mb-4" data-en="“Fast, professional, and affordable. I’ll be back for more!”" data-fa="«سریع، حرفه‌ای و مقرون‌به‌صرفه. دوباره برمی‌گردم!»">“Fast, professional, and affordable. I’ll be back for more!”</p>
+                    <p class="font-semibold" data-en="– Ali R." data-fa="– علی ر.">– Ali R.</p>
                 </div>
             </div>
         </div>
@@ -72,31 +77,58 @@
     <!-- CTA Section -->
     <section class="py-16 bg-blue-600 text-white text-center">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6">Ready to Create Something Amazing?</h2>
-            <a href="/register" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition">Sign Up Today</a>
+            <h2 class="text-3xl font-bold mb-6" data-en="Ready to Create Something Amazing?" data-fa="آماده خلق چیزی شگفت‌انگیز هستی؟">Ready to Create Something Amazing?</h2>
+            <a href="/register" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Sign Up Today" data-fa="امروز ثبت‌نام کن">Sign Up Today</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-8 bg-gray-800 text-white">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 DesignHub. All rights reserved.</p>
+            <p data-en="© 2025 DesignHub. All rights reserved." data-fa="© ۱۴۰۴ DesignHub. همه حقوق محفوظ است.">© 2025 DesignHub. All rights reserved.</p>
             <div class="mt-4">
-                <a href="#" class="text-gray-400 hover:text-white mx-2">About</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="About" data-fa="درباره ما">About</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="Contact" data-fa="تماس با ما">Contact</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="Terms" data-fa="شرایط استفاده">Terms</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple scroll animation for smooth navigation
+        const langToggle = document.getElementById('lang-toggle');
+        const htmlRoot = document.getElementById('html-root');
+        const bodyRoot = document.getElementById('body-root');
+        let isPersian = false;
+
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en][data-fa]');
+            elements.forEach(el => {
+                el.textContent = isPersian ? el.getAttribute('data-fa') : el.getAttribute('data-en');
+            });
+            langToggle.textContent = isPersian ? 'English' : 'فارسی';
+            htmlRoot.setAttribute('lang', isPersian ? 'fa' : 'en');
+            bodyRoot.setAttribute('dir', isPersian ? 'rtl' : 'ltr');
+            bodyRoot.style.fontFamily = isPersian ? 'Vazir, Arial, sans-serif' : 'Arial, sans-serif';
+        }
+
+        langToggle.addEventListener('click', () => {
+            isPersian = !isPersian;
+            updateLanguage();
+        });
+
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
+
+        // Optional: Load a Persian font (e.g., Vazir) from CDN
+        const link = document.createElement('link');
+        link.href = 'https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
     </script>
 </body>
 </html>
