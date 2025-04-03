@@ -16,6 +16,11 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+        [dir="rtl"] .text-center { text-align: center; }
+        [dir="rtl"] .text-left { text-align: right; }
+        [dir="rtl"] .text-right { text-align: left; }
+        .feature-icon { width: 50px; height: 50px; fill: #4b5563; transition: fill 0.3s; }
+        .feature-icon:hover { fill: #2563eb; }
     </style>
 </head>
 <body class="font-sans text-gray-800 transition-all duration-300" id="body-root">
@@ -27,31 +32,37 @@
     <!-- Hero Section -->
     <section class="animate-gradient text-white py-20">
         <div class="container mx-auto text-center px-4">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6" data-en="Turn Your Ideas into Stunning Designs" data-fa="ایده‌هایت را به طرح‌های خیره‌کننده تبدیل کن">Turn Your Ideas into Stunning Designs</h1>
-            <p class="text-xl md:text-2xl mb-8" data-en="Custom graphics, illustrations, and more – delivered to your account." data-fa="گرافیک سفارشی، تصاویر و بیشتر – مستقیم در حساب کاربری‌ات.">Custom graphics, illustrations, and more – delivered to your account.</p>
-            <a href="/register" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Get Started Now" data-fa="همین حالا شروع کن">Get Started Now</a>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight" data-en="Turn Your Ideas into Stunning Designs" data-fa="ایده‌هایت را به طرح‌های خیره‌کننده تبدیل کن">Turn Your Ideas into Stunning Designs</h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto" data-en="Custom graphics, illustrations, and more – delivered to your account." data-fa="گرافیک سفارشی، تصاویر و بیشتر – مستقیم در حساب کاربری‌ات.">Custom graphics, illustrations, and more – delivered to your account.</p>
+            <a href="/register" class="inline-block bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Get Started Now" data-fa="همین حالا شروع کن">Get Started Now</a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12" data-en="Why Choose DesignHub?" data-fa="چرا DesignHub را انتخاب کنیم؟">Why Choose DesignHub?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12" data-en="Why Choose DesignHub?" data-fa="چرا DesignHub را انتخاب کنیم؟">Why Choose DesignHub?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="text-center p-6 bg-white rounded-lg shadow-lg">
-                    <img src="https://via.placeholder.com/50" alt="Custom Icon" class="mx-auto mb-4">
+                    <svg class="feature-icon mx-auto mb-4" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm-1 2.5h2v2h-2v-2zm0 3h2v2h-2v-2zm0 3h2v2h-2v-2zm0 3h2v2h-2v-2z"/>
+                    </svg>
                     <h3 class="text-xl font-semibold mb-2" data-en="Tailored Designs" data-fa="طرح‌های سفارشی">Tailored Designs</h3>
-                    <p data-en="Submit your vision, and our team crafts it just for you." data-fa="چشم‌اندازت را بفرست، تیم ما آن را برایت می‌سازد.">Submit your vision, and our team crafts it just for you.</p>
-                </div>
-                <div class="texthz-center p-6 bg-white rounded-lg shadow-lg">
-                    <img src="https://via.placeholder.com/50" alt="Fast Icon" class="mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2" data-en="Fast Delivery" data-fa="تحویل سریع">Fast Delivery</h3>
-                    <p data-en="Get your designs quickly without compromising quality." data-fa="طرح‌هایت را سریع و با کیفیت بگیر.">Get your designs quickly without compromising quality.</p>
+                    <p class="text-gray-600" data-en="Submit your vision, and our team crafts it just for you." data-fa="چشم‌اندازت را بفرست، تیم ما آن را برایت می‌سازد.">Submit your vision, and our team crafts it just for you.</p>
                 </div>
                 <div class="text-center p-6 bg-white rounded-lg shadow-lg">
-                    <img src="https://via.placeholder.com/50" alt="Download Icon" class="mx-auto mb-4">
+                    <svg class="feature-icon mx-auto mb-4" viewBox="0 0 24 24">
+                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 2h-2v8l-3.5 2 1 1.73L13 13V4z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Fast Delivery" data-fa="تحویل سریع">Fast Delivery</h3>
+                    <p class="text-gray-600" data-en="Get your designs quickly without compromising quality." data-fa="طرح‌هایت را سریع و با کیفیت بگیر.">Get your designs quickly without compromising quality.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <svg class="feature-icon mx-auto mb-4" viewBox="0 0 24 24">
+                        <path d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm2 12h10v2H7v-2zm0-4h10v2H7v-2zm0-4h10v2H7v-2z"/>
+                    </svg>
                     <h3 class="text-xl font-semibold mb-2" data-en="Easy Downloads" data-fa="دانلود آسان">Easy Downloads</h3>
-                    <p data-en="Access and download your files anytime from your account." data-fa="هر زمان از حساب کاربری‌ات فایل‌ها را دانلود کن.">Access and download your files anytime from your account.</p>
+                    <p class="text-gray-600" data-en="Access and download your files anytime from your account." data-fa="هر زمان از حساب کاربری‌ات فایل‌ها را دانلود کن.">Access and download your files anytime from your account.</p>
                 </div>
             </div>
         </div>
@@ -60,14 +71,14 @@
     <!-- Testimonials Section -->
     <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12" data-en="What Our Users Say" data-fa="کاربران ما چه می‌گویند">What Our Users Say</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12" data-en="What Our Users Say" data-fa="کاربران ما چه می‌گویند">What Our Users Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <p class="italic mb-4" data-en="“The designs were exactly what I needed, and downloading them was a breeze!”" data-fa="«طرح‌ها دقیقاً همان چیزی بودند که نیاز داشتم، دانلودشان هم خیلی ساده بود!»">“The designs were exactly what I needed, and downloading them was a breeze!”</p>
+                    <p class="italic mb-4 text-gray-600" data-en="“The designs were exactly what I needed, and downloading them was a breeze!”" data-fa="«طرح‌ها دقیقاً همان چیزی بودند که نیاز داشتم، دانلودشان هم خیلی ساده بود!»">“The designs were exactly what I needed, and downloading them was a breeze!”</p>
                     <p class="font-semibold" data-en="– Sarah M." data-fa="– سارا م.">– Sarah M.</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <p class="italic mb-4" data-en="“Fast, professional, and affordable. I’ll be back for more!”" data-fa="«سریع، حرفه‌ای و مقرون‌به‌صرفه. دوباره برمی‌گردم!»">“Fast, professional, and affordable. I’ll be back for more!”</p>
+                    <p class="italic mb-4 text-gray-600" data-en="“Fast, professional, and affordable. I’ll be back for more!”" data-fa="«سریع، حرفه‌ای و مقرون‌به‌صرفه. دوباره برمی‌گردم!»">“Fast, professional, and affordable. I’ll be back for more!”</p>
                     <p class="font-semibold" data-en="– Ali R." data-fa="– علی ر.">– Ali R.</p>
                 </div>
             </div>
@@ -77,8 +88,8 @@
     <!-- CTA Section -->
     <section class="py-16 bg-blue-600 text-white text-center">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6" data-en="Ready to Create Something Amazing?" data-fa="آماده خلق چیزی شگفت‌انگیز هستی؟">Ready to Create Something Amazing?</h2>
-            <a href="/register" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Sign Up Today" data-fa="امروز ثبت‌نام کن">Sign Up Today</a>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6" data-en="Ready to Create Something Amazing?" data-fa="آماده خلق چیزی شگفت‌انگیز هستی؟">Ready to Create Something Amazing?</h2>
+            <a href="/register" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition" data-en="Sign Up Today" data-fa="امروز ثبت‌نام کن">Sign Up Today</a>
         </div>
     </section>
 
@@ -86,10 +97,10 @@
     <footer class="py-8 bg-gray-800 text-white">
         <div class="container mx-auto px-4 text-center">
             <p data-en="© 2025 DesignHub. All rights reserved." data-fa="© ۱۴۰۴ DesignHub. همه حقوق محفوظ است.">© 2025 DesignHub. All rights reserved.</p>
-            <div class="mt-4">
-                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="About" data-fa="درباره ما">About</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="Contact" data-fa="تماس با ما">Contact</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2" data-en="Terms" data-fa="شرایط استفاده">Terms</a>
+            <div class="mt-4 space-x-4 rtl:space-x-reverse">
+                <a href="#" class="text-gray-400 hover:text-white" data-en="About" data-fa="درباره ما">About</a>
+                <a href="#" class="text-gray-400 hover:text-white" data-en="Contact" data-fa="تماس با ما">Contact</a>
+                <a href="#" class="text-gray-400 hover:text-white" data-en="Terms" data-fa="شرایط استفاده">Terms</a>
             </div>
         </div>
     </footer>
@@ -116,7 +127,6 @@
             updateLanguage();
         });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -124,11 +134,12 @@
             });
         });
 
-        // Optional: Load a Persian font (e.g., Vazir) from CDN
         const link = document.createElement('link');
         link.href = 'https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css';
         link.rel = 'stylesheet';
         document.head.appendChild(link);
+
+        updateLanguage();
     </script>
 </body>
 </html>
